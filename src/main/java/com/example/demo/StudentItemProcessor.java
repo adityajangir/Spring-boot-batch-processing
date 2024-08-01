@@ -15,9 +15,9 @@ public class StudentItemProcessor implements ItemProcessor<NoSqlDataModel, Stude
         final String course = stud.getCourse().toUpperCase();
         final int Id = stud.getId();
         final Student transformedStudent = new Student(Id, firstName, lastName, course);
-        System.out.println(transformedStudent);
+//        System.out.println(transformedStudent);
 
-        log.info("Converting (" + stud + ") into (" + transformedStudent + ")");
+//        log.info("Converting (" + stud + ") into (" + transformedStudent + ")");
         return transformedStudent;
     }
 }

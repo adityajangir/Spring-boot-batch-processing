@@ -14,7 +14,7 @@ public class Processorinitial implements ItemProcessor<NoSqlDataModel, NoSqlData
         final String course = stud.getCourse().toUpperCase();
         final NoSqlDataModel transformedStudent = new NoSqlDataModel(stud.getId(),firstName, lastName, course);
 
-        log.info("Converting (" + stud + ") into (" + transformedStudent + ")");
+//        log.info("Converting (" + stud + ") into (" + transformedStudent + ")");
         return transformedStudent;
     }
 }
